@@ -18,13 +18,13 @@ def env_fn(env, **kwargs) -> MultiAgentEnv:
 
 REGISTRY = {
     "sc2": partial(env_fn, env=StarCraft2Env),
-    "matrix_game_1": partial(env_fn, env=Matrix_game1Env),
-    "matrix_game_2": partial(env_fn, env=Matrix_game2Env),
-    "matrix_game_3": partial(env_fn, env=Matrix_game3Env),
-    "mmdp_game_1": partial(env_fn, env=mmdp_game1Env),
-    "mmdp_game_2": partial(env_fn, env=TwoState),
-    "spread_x": partial(env_fn, env=spread_xEnv),
-    "spread_x2": partial(env_fn, env=spread_x2Env),
+    # "matrix_game_1": partial(env_fn, env=Matrix_game1Env),
+    # "matrix_game_2": partial(env_fn, env=Matrix_game2Env),
+    # "matrix_game_3": partial(env_fn, env=Matrix_game3Env),
+    # "mmdp_game_1": partial(env_fn, env=mmdp_game1Env),
+    # "mmdp_game_2": partial(env_fn, env=TwoState),
+    # "spread_x": partial(env_fn, env=spread_xEnv),
+    # "spread_x2": partial(env_fn, env=spread_x2Env),
 } if 'MBP' not in socket.gethostname() and 'DESIGNARE' not in socket.gethostname() else {}
 REGISTRY["gridworld"] = GridworldEnv
 
