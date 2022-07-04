@@ -2,8 +2,9 @@ from functools import partial
 # do not import SC2 in labtop
 import socket
 if 'MBP' not in socket.gethostname() and 'DESIGNARE' not in socket.gethostname():
-    from smac.env import MultiAgentEnv, StarCraft2Env, Matrix_game1Env, Matrix_game2Env, Matrix_game3Env, mmdp_game1Env, \
-        spread_xEnv, spread_x2Env, TwoState
+    # from smac.env import MultiAgentEnv, StarCraft2Env, Matrix_game1Env, Matrix_game2Env, Matrix_game3Env, mmdp_game1Env, \
+    #     spread_xEnv, spread_x2Env, TwoState
+    from smac.env import MultiAgentEnv, StarCraft2Env
 else:
     from .multiagentenv import MultiAgentEnv
 import sys
