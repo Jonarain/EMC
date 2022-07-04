@@ -1,8 +1,8 @@
 .idea/
 
-pymarl/3rdparty/StarCraftII/*
-pymarl/3rdparty/StarCraftII_2.4.10/*
-!/pymarl/3rdparty/StarCraftII/Replays
+3rdparty/StarCraftII/*
+3rdparty/StarCraftII_2.4.10/*
+!/3rdparty/StarCraftII/Replays
 
 **/__pycache__/
 *.pyc
