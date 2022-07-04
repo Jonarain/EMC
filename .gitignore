@@ -1,0 +1,9 @@
+.idea/
+
+pymarl/3rdparty/StarCraftII/*
+pymarl/3rdparty/StarCraftII_2.4.10/*
+!pymarl//3rdparty/StarCraftII/Replays
+pymarl/__MACOSX/*
+
+**/__pycache__/
+*.pyc
