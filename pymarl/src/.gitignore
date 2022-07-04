@@ -1,2 +1,8 @@
-tb_logs/
-results/
+.idea/
+
+3rdparty/StarCraftII/*
+3rdparty/StarCraftII_2.4.10/*
+!/3rdparty/StarCraftII/Replays
+
+**/__pycache__/
+*.pyc
