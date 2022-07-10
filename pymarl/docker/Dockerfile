@@ -6,6 +6,9 @@ ENV CUDA_PATH /usr/local/cuda
 ENV CUDA_INCLUDE_PATH /usr/local/cuda/include
 ENV CUDA_LIBRARY_PATH /usr/local/cuda/lib64
 
+RUN rm /etc/apt/sources.list.d/cuda.list
+RUN rm /etc/apt/sources.list.d/nvidia-ml.list
+
 # Ubuntu Packages
 RUN apt-get update -y && apt-get install software-properties-common -y && \
     add-apt-repository -y multiverse && apt-get update -y && apt-get upgrade -y && \
